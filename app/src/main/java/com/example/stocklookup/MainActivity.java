@@ -48,7 +48,7 @@ RecyclerAdapter recyclerAdapter=new RecyclerAdapter(MainActivity.this,stocks);
             return insets;
         });
         recyclerView=findViewById(R.id.recyclerView);
-        recyclerView.setLayoutManager(new GridLayoutManager(MainActivity.this,3));
+        recyclerView.setLayoutManager(new GridLayoutManager(getApplicationContext(),3));
         searchView=findViewById(R.id.searchView);
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
