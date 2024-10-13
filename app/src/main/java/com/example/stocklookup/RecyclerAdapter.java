@@ -63,7 +63,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
                 AndroidNetworking.initialize(context);
                 AndroidNetworking
                         .get("https://yahoo-finance15.p.rapidapi.com/api/v1/markets/options/most-active?type=STOCKS")
-                        .addHeaders("x-rapidapi-key", "7b954fcb12msh229db1f90919780p10c655jsn5e40f3bcd1d7")
+                        .addHeaders("x-rapidapi-key", context.getResources().getString(R.string.ApiKey))
                         .addHeaders("x-rapidapi-host", "yahoo-finance15.p.rapidapi.com")
                         .build()
                         .getAsJSONObject(new JSONObjectRequestListener() {
