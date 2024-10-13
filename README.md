@@ -17,4 +17,4 @@ The application uses a Api For information about stocks . Ensure you have the ne
 For any inquiries or feedback, please reach out to rohansinghazad19@gmail.com.
 
 ## Download Apk
-[Download QuizQuest](https://github.com/EWRohan/Files/raw/main/StockLookUp.apk)
+[Download StockLookUp](https://github.com/EWRohan/Files/raw/main/StockLookUp.apk)
