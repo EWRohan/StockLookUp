@@ -86,14 +86,6 @@ RecyclerAdapter recyclerAdapter=new RecyclerAdapter(MainActivity.this,stocks);
                                 stocks.add(new Stock(i,stock.getString("symbol")));
                                 recyclerAdapter.notifyDataSetChanged();
                             }
-//                            new Handler().postDelayed(new Runnable() {
-//                                @Override
-//                                public void run() {
-//                                    RecyclerAdapter recyclerAdapter=new RecyclerAdapter(getApplicationContext(),stocks);
-//                                    recyclerView.setAdapter(recyclerAdapter);
-//                                }
-//                            },10000);
-//                            RecyclerAdapter recyclerAdapter=new RecyclerAdapter(MainActivity.this,stocks);
                             recyclerView.setAdapter(recyclerAdapter);
 
                         } catch (JSONException e) {
