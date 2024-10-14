@@ -71,7 +71,7 @@ RecyclerAdapter recyclerAdapter=new RecyclerAdapter(MainActivity.this,stocks);
         AndroidNetworking.initialize(getApplicationContext());
         AndroidNetworking
                 .get("https://yahoo-finance15.p.rapidapi.com/api/v1/markets/options/most-active?type=STOCKS")
-                .addHeaders("x-rapidapi-key", getResources().getString(R.string.ApiKey))
+                .addHeaders("x-rapidapi-key", getResources().getString(R.string.ApiKey))//Add your own Apikey form rapidapi in the string resource file
                 .addHeaders("x-rapidapi-host", "yahoo-finance15.p.rapidapi.com")
                 .build()
                 .getAsJSONObject(new JSONObjectRequestListener() {
